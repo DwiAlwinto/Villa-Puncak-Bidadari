@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import NavbarComp from "./componets/NavbarComp";
+import HeroComp from "./componets/HeroComp";
+import GalleryComp from "./componets/GalleryComp";
+import ServicesComp from "./componets/ServicesComp";
+import FaqComp from "./componets/FaqComp";
+import FooterComp from "./componets/FooterComp";
+import LokasiComp from "./componets/LokasiComp";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+    <HeroComp />
+
+    {/* Content */} 
+      <NavbarComp />
+      <GalleryComp />
+      <ServicesComp />
+      <FaqComp />
+      <LokasiComp />
+    {/* Content */}
+
+    <FooterComp />
+   </div>
   );
 }
 
